@@ -1,0 +1,296 @@
+/*CORP*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+  }
+  
+  h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+  }
+  
+  .botao {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: black;
+    font-size: .9em;
+    border-radius: 3px;
+  }
+  
+  /*NAVEGAÇÂO*/
+  
+  nav {
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  nav ul li.items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+  }
+  
+  nav ul li.items:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #8a8d8d;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+  
+  nav ul li.items:hover:after {
+    opacity: 1;
+    bottom: 8px;
+  }
+  
+  nav ul li.logo {
+    flex: 1;
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+  }
+  
+  nav ul li a {
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .4s;
+  }
+  
+  nav ul li:hover a {
+    color: #8a8d8d;
+  }
+  
+  
+  /*CABEÇALHO*/
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/multi-ethnic-young-couple-standing-face-to-face-screaming-against-whit-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #6F6F73;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    color: #6F6F73;
+  }
+  
+  header p {
+    margin-bottom: 2em;
+  }
+  
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #6F6F73;
+  }
+  
+  #sobre h2 {
+    color: #f7f7fa;
+  }
+  
+  #sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+  }
+  
+  #sobre .botao {
+    background-color: yellow;
+    color: blue;
+  }
+  
+  #solucoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  #solucoes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #solucoes img {
+    width: 20%;
+  }
+  
+  /*FOTOS*/
+  
+  #fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  #fotos h2 {
+    margin-bottom: 20px;
+  }
+  
+  #fotos img {
+    width: 100%;
+  }
+  
+  /*CONTATO*/
+  
+  #contato h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #contato h2 {
+    color: #6F6F73
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6F6F73;
+    color: #FFFFFF
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #6F6F73;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /*nav*/
+    nav {
+      padding: 5px 30px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      width: 70%;
+    }
+  
+    nav ul li.items {
+      width: 100%;
+  }
+  
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #8a8d8d;
+    box-shadow: inset 0 0 10px #161616;
+  }
+  
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+  
+    /*Cabeçalho*/
+  
+    header {
+      height: 600px;
+      height: 60vh;
+      justify-content: center;
+    }
+  
+    /*Sobre*/
+  
+    #sobre {
+      height: 250px;
+      height: 30vh;
+      justify-content: center;
+      min-height: 250px;
+    }
+  
+    /*Soluções*/
+  
+    #solucoes {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+  
+    #solucoes h2 {
+      text-align: center;
+      width: 100%;
+    }
+  
+    #solucoes div {
+      flex-grow: 1;
+      flex-basis: 150px;
+      padding: 0 10px;
+    }
+  
+    #fotos {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    #fotos h2 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    #fotos img {
+      width: 33.3333333%;
+    }
+  
+    #contato {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  
+    #contato h2, #contato p {
+      width: 100%;
+    }
+  }
