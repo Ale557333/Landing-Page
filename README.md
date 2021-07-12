@@ -47,7 +47,7 @@ Os critérios foram:
 git clone https://github.com/Ale557333/Landing-page.git
 
 # Entrar no diretório
-cd landin-page
+cd landing-page
 
 # Utilizar extensão Live Server VS Code
 ```
