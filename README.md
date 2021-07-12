@@ -50,6 +50,7 @@ git clone https://github.com/Ale557333/Landing-page.git
 cd landing-page
 
 # Utilizar extensão Live Server VS Code
+[VS Code](https://code.visualstudio.com/download)
 ```
 
 Desenvolvido com 🧡 por Alexandre, Ingrid e Helany 🤝
