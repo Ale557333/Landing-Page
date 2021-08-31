@@ -1,5 +1,5 @@
 
-# Landing page
+# 📱 Landing page
 
 O projeto Landing Page foi desenvolvido em grupo durante o Bootcamp da Labenu, com o intuito de colocarmos em prática o conteúdo estudado no curso, a saber: HTML e CSS puro.
 
